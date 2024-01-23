@@ -1,8 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/vue3'
 import { withActions } from '@storybook/addon-actions/decorator'
 
-import { ref } from 'vue'
-
 import P5Tabs from "./P5Tabs.vue";
 
 const meta = {
