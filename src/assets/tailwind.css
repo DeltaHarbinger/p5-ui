@@ -13,6 +13,7 @@
     }
 
     .shimmer-base:hover:not(.shimmer-shadow-disabled),
+    .shimmer-base:hover:not(.shimmer-shadow-disabled),
     .shimmer-base.shimmer-active:not(.shimmer-shadow-disabled),
     .shimmer-base.shimmer-shadow-active:not(.shimmer-shadow-disabled),
     .shimmer-shadow:hover {
@@ -39,24 +40,24 @@
     
     @keyframes shimmering {
         0% {
-            -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 14% 95%);
-            clip-path: polygon(0 0, 100% 8%, 100% 100%, 14% 95%);
+            -webkit-clip-path: polygon(0 0, 100% min(8%, 8px), 100% 100%, 16px calc(100% - min(5%, 8px)));
+            clip-path: polygon(0 0, 100% min(8%, 8px), 100% 100%, 16px calc(100% - min(5%, 8px)));
         }
         25% {
-            -webkit-clip-path: polygon(13% 13%, 100% 0, 85% 88%, 0 100%);
-            clip-path: polygon(13% 13%, 100% 0, 85% 88%, 0 100%);
+            -webkit-clip-path: polygon(min(13%, 16px) min(13%, 16px), 100% 0, calc(100% - min(15%, 16px)) min(12%, 10px)), 0 100%);
+            clip-path: polygon(min(13%, 16px) min(13%, 16px), 100% 0, calc(100% - min(15%, 16px)) min(12%, 10px)), 0 100%);
         }
         50% {
-            -webkit-clip-path: polygon(0 0, 92% 4%, 100% 100%, 2% 96%);
-            clip-path: polygon(0 0, 92% 4%, 100% 100%, 2% 96%);
+            -webkit-clip-path: polygon(0 0, calc(100% - min(8%, 8px)) min(4%, 6px), 100% 100%, min(2%, 4px) calc(100% - min(4%, 6px)));
+            clip-path: polygon(0 0, calc(100% - min(8%, 8px)) min(4%, 6px), 100% 100%, min(2%, 4px) calc(100% - min(4%, 6px)));
         }
         75% {
-            -webkit-clip-path: polygon(9% 2%, 100% 0, 95% 96%, 0 100%);
-            clip-path: polygon(9% 2%, 100% 0, 95% 96%, 0 100%);
+            -webkit-clip-path: polygon(min(9%, 10px) min(2%, 4px), 100% 0, calc(100% - min(5%, 7px)) calc(100% - min(4%, 6px)), 0 100%);
+            clip-path: polygon(min(9%, 10px) min(2%, 4px), 100% 0, calc(100% - min(5%, 7px)) calc(100% - min(4%, 6px)), 0 100%);
         }
         100% {
-            -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 14% 95%);
-            clip-path: polygon(0 0, 100% 8%, 100% 100%, 14% 95%);
+            -webkit-clip-path: polygon(0 0, 100% min(8%, 8px), 100% 100%, 16px calc(100% - min(5%, 8px)));
+            clip-path: polygon(0 0, 100% min(8%, 8px), 100% 100%, 16px calc(100% - min(5%, 8px)));
         }
     }
     
