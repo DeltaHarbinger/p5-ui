@@ -23,9 +23,3 @@ const onClick = () => {
         </span>
     </button>
 </template>
-
-<style scoped>
-.toggle-hover:hover {
-    @apply shimmer-shadow-active
-}
-</style>
