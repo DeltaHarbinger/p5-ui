@@ -1,6 +1,6 @@
 {
   "name": "p5-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "DeltaHarbinger",
   "description": "## Project Setup ``` npm i ```",
   "files": [
@@ -18,7 +18,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build --test"
   },
   "dependencies": {
     "vue": "^3.4.15"
