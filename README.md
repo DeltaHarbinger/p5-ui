@@ -1,6 +1,6 @@
 # P5 UI
 
-Component library inspired from the UI found in Persona 5. This is not intended to be a 1 to 1 replica
+VueJS Component library inspired from the UI found in Persona 5. This is not intended to be a 1 to 1 replica
 
 ```sh
 npm install
