@@ -5,7 +5,7 @@ interface Props {
     options: {
         label: string,
         value: any,
-        disabled: boolean,
+        disabled?: boolean,
     }[],
     multiple?: boolean,
 }
